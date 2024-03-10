@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- documento xml da validare -->
+<!-- 
+    file: esercizio-doc-da-validare
+    nome: Denise Peselli
+    data: 10/03/2024
+-->
+
+<!-- corpo del documento XML-->
+<elementoRadice>
+    <elementoFiglio>
+        <elementoAnnidato>
+        <elementoAggiuntoFiglio> <!--Aggiungo elemento figlio ad elemento annidato-->
+        </elementoAggiuntoFiglio>
+        </elementoAnnidato>
+        <elementoAggiuntoFratello> <!--Aggiungo elemento fratello ad elemento annidato-->
+        </elementoAggiuntoFratello>
+    </elementoFiglio>
+    <elementoFiglio>
+        <elementoAnnidato>
+            <elementoAnnidato>
+            <elementoFiglio> 
+            </elementoFiglio> <!--Sposto chiusura dell'elemento figlio in modo che stia dentro all'elemento annidato-->
+        </elementoAnnidato>
+        </elementoAnnidato> <!--Metto / per chiudere elemento annidato e lo sposto-->
+        <elementoFiglio></elementoFiglio>
+    </elementoFiglio>
+</elementoRadice>
+
+<!-- epilogo -->
