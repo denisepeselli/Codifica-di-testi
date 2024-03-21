@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- 
+    file: eserciziodtdattributi
+    nome: Denise Peselli
+    data: 16/03/2024
+-->
+<!DOCTYPE TEI 
+[
+<!ELEMENT TEI (header, facsimile?, text+)>
+<!ELEMENT header (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT text (#PCDATA|seg)*>
+<!ELEMENT seg (#PCDATA) >
+<!ATTLIST header type CDATA #FIXED "Intestazione" >
+<!ATTLIST header lang NMTOKENS #IMPLIED >
+<!ATTLIST facsimile source CDATA #REQUIRED >
+<!ATTLIST facsimile ref IDREFS #IMPLIED >
+<!ATTLIST text id ID #REQUIRED>
+<!ATTLIST text type CDATA #IMPLIED >
+]>
+<TEI>
+    <header type="Intestazione" lang="Italiano"> header </header>
+    <facsimile source="/www.eserciziodtd.com/facsimile.jpg">opzionale</facsimile>
+    <text id="text1" type="testosemplice">
+        <seg>Segmento1</seg>
+    </text>
+</TEI>
