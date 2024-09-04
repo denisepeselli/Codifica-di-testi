@@ -1,0 +1,456 @@
+/*impostazioni generali*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff3da;
+    font-size: 110%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #af5129;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+header a{
+    width: 50%;
+}
+
+header a img{
+    width: 70%;
+}
+
+.but_informazioni{
+    border: none;
+    font-family: 'Libre Baskerville', Times, serif;
+    letter-spacing: -0.5px;
+    font-size: 24px;
+    width: 20%;
+    margin-left: 15%;
+    background-color: #af5129;
+}
+
+.but_informazioni:hover{
+    background-color: #646544;
+    color: #fff3da;
+}
+
+#titolo_c{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0px;
+}
+
+#titolo_c h1{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 200%;
+}
+
+#titolo_c h2{
+    margin-top: 0px;
+    font-size: 125%;
+}
+
+/*lista e tabella informazioni*/
+.informazioni{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: #646544;
+    border-radius: 30px;
+    border: solid 1px #646544;
+}
+
+.inf_codifica{
+    width: 85%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: #fbe5b5;
+    border-radius: 30px;
+}
+
+h3{
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+dt{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 4%;
+}
+
+dd{
+    font-size: 18px;
+}
+
+.inf_bibliografiche{
+    width: 85%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: #fbe5b5;
+    border-radius: 30px;
+}
+
+.tab_principale{
+    text-align: center;
+}
+
+th{
+    width: 20%;
+    text-align: left;
+}
+
+td{
+    margin-top: 0px;
+    width: 80%;
+}
+
+table {
+    border-bottom: solid 1px #646544;
+    border-spacing: 0 15px;
+    width: 100%;
+    overflow-x: auto;
+    table-layout: fixed;
+}
+
+.tab_art {
+    width: 98%;
+    table-layout: fixed;
+    margin-left: 1%;
+}
+
+.tab_art th {
+    width: 40%;
+}
+
+.tab_art td {
+    width: 60%;
+}
+
+/*bottoni per vedere i testi*/
+#menu_art{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#menu_art button{
+    background-color: #af5129;
+    color: #fff3da;
+    border-radius: 10px;
+    padding: 1%;
+    border: solid 2px #36251b;
+    margin-left: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+/*bottoni per evidenziare il testo*/
+#evidenzia_parti{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 243, 218, 0.5);
+    z-index: 2000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.but_evidenzia{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #fff;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    padding: 1%;
+
+}
+
+#but_pers{
+    background-color: #b87333;
+
+}
+
+#but_luoghi{
+    background-color: #182d09;
+}
+
+#but_organ{
+    background-color: #7c2946;
+}
+
+#but_event{
+    background-color: #650015;
+}
+
+#but_disc{
+    background-color: #4e533b;
+}
+
+#but_pens{
+    background-color: #2b1d14;
+}
+
+#but_fig_ret{
+    background-color: #8c411d;
+}
+
+#but_cit{
+    background-color: #bf5700;
+}
+
+#but_opere{
+    background-color: #253047;
+}
+
+#but_term{
+    background-color: #926aa6;
+}
+
+#but_date{
+    background-color: #4e1336;
+}
+
+#but_nume{
+    background-color: #c0513e;
+}
+
+#but_corr{
+    background-color: #008080;
+}
+
+#but_reg{
+    background-color: #7e212a;
+}
+
+#but_esp{
+    background-color: #7bb369;
+}
+
+/*testi e immagini*/
+.contenitore{
+    width: 98%;
+    margin-left: 1%;
+    margin-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testo_codificato{
+    display: flex;
+    flex-direction: row;
+}
+
+.cont_testo{
+    width: 50%;
+    padding: 1%;
+}
+
+.colonne_testo{
+    vertical-align: top;
+}
+
+.facsimile{
+    width: 50%;
+}
+
+.facsimile img{
+    width: 100%;
+}
+
+.riga{
+    margin-right: 1%;
+}
+
+/*nomi*/
+.nome_testo {
+    position: relative; /* Necessario per il posizionamento assoluto del tooltip */
+    cursor: pointer; /* Cambia il cursore per indicare che è cliccabile */
+}
+
+.nomi {
+    display: none;
+    position: absolute;
+    color: black;
+    background-color: #fbe5b5;
+    border: 5px solid #af5129;
+    padding: 0.5%;
+    z-index: 1000;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.interpretazione {
+    display: none;
+    position: absolute;
+    background-color: #fbe5b5;
+    border: 5px solid #af5129;
+    padding: 0.5%;
+    z-index: 1000;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Mostra la finestra informativa quando il cursore è sopra il nome */
+.nome_testo:hover + .nomi {
+    display: block; /* Mostra la finestra informativa */
+}
+.fig_reg:hover .interpretazione{
+    display: block;
+}
+.nome_luogo{
+    background-color: #af5129;
+    border: solid 3px #36251b;
+    color: #fff3da;
+}
+
+.nome_org{
+    background-color: #36251b;
+    color: #fff3da;
+}
+
+.nome_term{
+    background-color: #84a473;
+    border: solid 3px #36251b;
+    color: #000;
+}
+
+.nome_bibl{
+    background-color: #733b73;
+    border: solid 3px #36251b;
+    color: #fff3da;
+}
+
+.nome_evento{
+    background-color: #313575;
+    border: solid 3px #733b73;
+    color: #fff3da;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    margin-bottom: 2%;
+    margin-left: 1%;
+}
+
+a{
+    color: #000;
+}
+
+.highlight{
+    background-color: #eab43f;
+    border-radius:10px;
+}
+
+.highlighted_per {
+    color: #FFFFFF; 
+    background-color: #b87333; 
+}
+
+.highlighted_per a {
+    color: #FFFFFF; 
+}
+
+.highlighted_luo {
+    color: #FFFFFF; 
+    background-color: #182d09; 
+}
+
+.highlighted_luo a {
+    color: #FFFFFF; 
+}
+
+.highlighted_dis {
+    color: #FFFFFF; 
+    background-color: #4e533b; 
+}
+
+.highlighted_pen {
+    color: #FFFFFF; 
+    background-color: #2b1d14; 
+}
+
+.highlighted_eve {
+    color: #FFFFFF; 
+    background-color: #650015; 
+}
+
+
+.highlighted_dat {
+    color: #FFFFFF; 
+    background-color: #4e1336; 
+}
+
+.highlighted_org {
+    color: #FFFFFF; 
+    background-color: #7c2946; 
+}
+
+.highlighted_org a {
+    color: #FFFFFF; 
+}
+
+.highlighted_num {
+    color: #FFFFFF; 
+    background-color: #c0513e; 
+}
+
+.highlighted_fig {
+    color: #FFFFFF; 
+    background-color: #8c411d; 
+}
+
+.highlighted_cit {
+    color: #FFFFFF; 
+    background-color: #bf5700; 
+}
+
+.highlighted_ter {
+    color: #FFFFFF; 
+    background-color: #926aa6; 
+}
+
+.highlighted_op {
+    color: #FFFFFF; 
+    background-color: #253047; 
+}
+
+.highlighted_corr {
+    color: #FFFFFF; 
+    background-color: #008080; 
+}
+
+.highlighted_esp {
+    color: #FFFFFF; 
+    background-color: #7bb369; 
+}
+
+.highlighted_reg {
+    color: #FFFFFF; 
+    background-color: #7e212a; 
+}
+
+
